@@ -1,0 +1,21 @@
+<%= link_to "Create new", new_article_path, class: "btn btn-primary" %>
+<table class="table">
+  <thead>
+    <th> Name</th>
+    <th> Description</th>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |arcticle| %>
+      <tr>
+        <td>
+          <%= arcticle.name %>
+        </td>
+
+        <td>
+          <%= arcticle.description %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
