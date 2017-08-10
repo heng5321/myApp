@@ -1,19 +1,19 @@
-class ArticlesController < ApplicationController	
+class ArticlesController < ApplicationController
 	def index
 		@articles = Article.all
 	end
-
+	
 	def new
 		@article = Article.new
 	end
-
+	
 	def create
-		@article = Artile.new(article_params)
-
+		@article = Article.new(article_params)
+		
 		if @article.save
 			redirect_to articles_path
 		else
-
+			
 		end
 	end
 	
@@ -24,4 +24,3 @@ class ArticlesController < ApplicationController
 		.permit(columns)
 	end
 end
-
