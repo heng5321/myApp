@@ -3,19 +3,29 @@
   <thead>
     <th> Name</th>
     <th> Description</th>
+    <th> Title</th>
+    <th> Image Url</th>
   </thead>
 
   <tbody>
     <% @articles.each do |arcticle| %>
-      <tr>
-        <td>
-          <%= arcticle.name %>
-        </td>
+    <tr>
+      <td>
+        <%= arcticle.name %>
+      </td>
 
-        <td>
-          <%= arcticle.description %>
-        </td>
-      </tr>
+      <td>
+        <%= arcticle.description %>
+      </td>
+
+      <td>
+        <%= arcticle.title %>
+      </td>
+
+      <td>
+        <%= arcticle.image_url %>
+      </td>
+    </tr>
     <% end %>
   </tbody>
 </table>

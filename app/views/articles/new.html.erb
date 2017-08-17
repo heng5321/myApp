@@ -5,5 +5,12 @@
 <%= f.label :description, "Description" %><br/>
 <%= f.text_area :description, class: "form-control", placeholder: "Description" %>
 
+<%= f.label :title, "title" %><br/>
+<%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+
+<%= f.label :image_url, "Url" %><br/>
+<%= f.text_field :image_url, class: "form-control", placeholder: "Url" %>
+
+
 <%= f.submit "Submit" %>
 <% end %>

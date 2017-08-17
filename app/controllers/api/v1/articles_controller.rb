@@ -1,6 +1,7 @@
 class Api::V1::ArticlesController < API::V1::BaseController				
   def index
-    render json: "123"
+  	@articles = Article.all
+    render json: (@articles.to_json)
   end			
 end
 

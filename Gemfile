@@ -54,3 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'versionist'
+
+gem 'active_model_serializers', '~> 0.10.6'
+
+gem 'annotate', '~> 2.7', '>= 2.7.2'
