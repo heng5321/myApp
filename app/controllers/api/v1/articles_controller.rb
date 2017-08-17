@@ -3,3 +3,4 @@ class Api::V1::ArticlesController < API::V1::BaseController
     render json: "123"
   end			
 end
+
